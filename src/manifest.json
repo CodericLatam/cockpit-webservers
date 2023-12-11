@@ -5,7 +5,8 @@
 
     "tools": {
         "index": {
-            "label": "Starter Kit"
+            "label": "Webservers",
+            "order": 12
         }
     }
 }
