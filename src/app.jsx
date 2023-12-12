@@ -21,17 +21,42 @@ import cockpit from 'cockpit';
 import React from 'react';
 import { Alert } from "@patternfly/react-core/dist/esm/components/Alert/index.js";
 import { Card, CardBody, CardTitle } from "@patternfly/react-core/dist/esm/components/Card/index.js";
+import { TabsBoxLight } from './tabs';
 
 const _ = cockpit.gettext;
 
 export class Application extends React.Component {
+
     constructor() {
         super();
-        this.state = { hostname: _("Unknown") };
+        this.state = { 
+            httpd: false,
+            tomcat: false,
+            nginx: false,
+            haproxy: false,
+         };
 
-        cockpit.file('/etc/hostname').watch(content => {
-            this.setState({ hostname: content.trim() });
+         cockpit.file('/etc/httpd/conf/httpd.conf').watch(content => {
+            if(content) {
+                this.setState({ httpd: content.trim() });
+            }
         });
+        cockpit.file('/etc/tomcat/tomcat.conf').watch(content => {
+            if(content) {
+                this.setState({ tomcat: content.trim() });
+            }
+        });
+        cockpit.file('/etc/nginx/nginx.conf').watch(content => {
+            if(content) {
+                this.setState({ nginx: content.trim() });
+            }
+        });
+        cockpit.file('/etc/haproxy/haproxy.cfg').watch(content => {
+            if(content) {
+                this.setState({ haproxy: content.trim() });
+            }
+        });
+        
     }
 
     render() {
@@ -39,10 +64,7 @@ export class Application extends React.Component {
             <Card>
                 <CardTitle>Webservers</CardTitle>
                 <CardBody>
-                    <Alert
-                        variant="info"
-                        title={ cockpit.format(_("Running on $0"), this.state.hostname) }
-                    />
+                    <TabsBoxLight isEnabled={this.state} />
                 </CardBody>
             </Card>
         );

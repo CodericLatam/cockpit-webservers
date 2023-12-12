@@ -1,11 +1,11 @@
-Name: cockpit-starter-kit
+Name: cockpit-mail
 Version: %{VERSION}
 Release: 1%{?dist}
 Summary: Cockpit Starter Kit Example Module
 License: LGPL-2.1-or-later
 
-Source0: https://github.com/cockpit-project/starter-kit/releases/download/%{version}/%{name}-%{version}.tar.xz
-Source1: https://github.com/cockpit-project/starter-kit/releases/download/%{version}/%{name}-node-%{version}.tar.xz
+Source0: https://github.com/cockpit-community/cockpit-mail/releases/download/%{version}/%{name}-%{version}.tar.xz
+Source1: https://github.com/cockpit-community/cockpit-mail/releases/download/%{version}/%{name}-node-%{version}.tar.xz
 BuildArch: noarch
 ExclusiveArch: %{nodejs_arches} noarch
 BuildRequires: nodejs
