@@ -4,7 +4,11 @@
   "type": "module",
   "main": "index.js",
   "repository": "git@github.com:cockpit-community/cockpit-webservers.git",
-  "author": "",
+  "author": {
+    "name": "Neftali Yagua",
+    "email": "neftaliyagua@fedoraproject.org",
+    "url": "https://neftaliyagua.fedorapeople.org/"
+  },
   "license": "LGPL-2.1",
   "engines": {
     "node": ">= 16"
