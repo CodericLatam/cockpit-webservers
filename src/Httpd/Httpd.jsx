@@ -1,4 +1,9 @@
-import { CodeBlock, CodeBlockCode, Tab, TabTitleText } from "@patternfly/react-core";
+import {
+  CodeBlock,
+  CodeBlockCode,
+  Tab,
+  TabTitleText,
+} from "@patternfly/react-core";
 import React from "react";
 
 class Httpd extends React.Component {
@@ -19,11 +24,7 @@ class Httpd extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        Apache HTTP Server
-      </div>
-    );
+    return <div>Apache HTTP Server</div>;
   }
 }
 
