@@ -136,7 +136,7 @@ export class Application extends React.Component {
           >
             <Tab
               eventKey={0}
-              title={<TabTitleText>Apache HTTP</TabTitleText>}
+              title={<TabTitleText>HTTPD</TabTitleText>}
               isDisabled={!this.state.httpd}
               actions={<TabAction><IconStatus state={this.state.httpdState} /></TabAction>}
             >
@@ -144,7 +144,7 @@ export class Application extends React.Component {
             </Tab>
             <Tab
               eventKey={1}
-              title={<TabTitleText>Apache Tomcat</TabTitleText>}
+              title={<TabTitleText>Tomcat</TabTitleText>}
               isDisabled={!this.state.tomcat}
               actions={<TabAction><IconStatus state={this.state.tomcatState} /></TabAction>}
             >
@@ -168,7 +168,7 @@ export class Application extends React.Component {
             </Tab>
             <Tab
               eventKey={4}
-              title={<TabTitleText>Let's Encrypt</TabTitleText>}
+              title={<TabTitleText>Certbot</TabTitleText>}
               isDisabled={!this.state.certbot}
               actions={<TabAction><IconStatus state={this.state.certbotState} /></TabAction>}
             >
