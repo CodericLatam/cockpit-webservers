@@ -136,7 +136,7 @@ export class Application extends React.Component {
           >
             <Tab
               eventKey={0}
-              title={<TabTitleText>HTTPD</TabTitleText>}
+              title={<TabTitleText>Apache HTTP</TabTitleText>}
               isDisabled={!this.state.httpd}
               actions={
                 <TabAction>
@@ -160,7 +160,7 @@ export class Application extends React.Component {
             </Tab>
             <Tab
               eventKey={2}
-              title={<TabTitleText>NGINX</TabTitleText>}
+              title={<TabTitleText>Nginx</TabTitleText>}
               isDisabled={!this.state.nginx}
               actions={
                 <TabAction>
