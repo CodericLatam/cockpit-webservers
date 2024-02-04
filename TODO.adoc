@@ -23,9 +23,6 @@
 - [ ] php
 - [ ] perl
 - [ ] roundcube
-- [ ] 
-- [ ] 
-- [ ] 
 
 == Tomcat
 - [ ] Authentication Setting
