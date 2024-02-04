@@ -1,0 +1,41 @@
+= TODO
+- [ ] Certbot interface
+
+- [ ] HAProxy Interface
+
+== Apache HTTP features
+- [ ] port field
+- [ ] user & group
+- [ ] ServerAdmin
+- [ ] ServerName (Principal)
+- [ ] DocumentRoot (Require selinux fix files)
+
+- [ ] Directory Directive Editor
+- [ ] Module Directive Editor
+- [ ] Files Directive Editor
+- [ ] VirtualHost Directive Editor
+
+- [ ] phpmyAdmin
+- [ ] squid
+- [ ] ssl
+- [ ] webalizer
+- [ ] wordpress
+- [ ] php
+- [ ] perl
+- [ ] roundcube
+- [ ] 
+- [ ] 
+- [ ] 
+
+== Tomcat
+- [ ] Authentication Setting
+- [ ] Roles Setting
+- [ ] Apps Interface
+- [ ] Certificates Interface
+- [ ] Virtual Machines Interface
+- [ ] Status Interface
+- [ ] Diagnoses Interface
+- [ ] Config editor
+- [ ] Context editor
+- [ ] Manager setting editor
+- [ ] Server editor

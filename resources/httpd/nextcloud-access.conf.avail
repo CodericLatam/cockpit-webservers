@@ -1,0 +1,24 @@
+# If symlinked or copied to /etc/httpd/conf.d/z-nextcloud-access.conf
+# (or any other name that is alphabetically later than
+# 'nextcloud.conf'), this file will permit access to the ownCloud
+# installation from any client. Ensure your deployment is correctly
+# configured and secured before doing this!
+#
+# If you SYMLINK this file, you can rely on the ownCloud package to
+# handle any future changes in the directory or URL hierarchy; this
+# file will always achieve the high-level goal 'allow access to the
+# ownCloud installation from any client'. If you COPY this file, you
+# will have to check for changes to the original in future ownCloud
+# package updates, and make any appropriate adjustments to your copy.
+
+<Directory /usr/share/nextcloud/>
+    Include conf.d/nextcloud-auth-any.inc
+</Directory>
+
+<Directory /var/lib/nextcloud/apps/>
+    Include conf.d/nextcloud-auth-any.inc
+</Directory>
+
+<Directory /var/lib/nextcloud/assets/>
+    Include conf.d/nextcloud-auth-any.inc
+</Directory>
